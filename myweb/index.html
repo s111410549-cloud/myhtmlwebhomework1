@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家愷 | CYBERSPACE PROFILE</title>
+    <style>
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-blue: #00f2ff;
+            --dark-bg: #0d0d0d;
+            --card-bg: rgba(20, 20, 20, 0.8);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #fff;
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 15px var(--neon-blue);
+            background: var(--card-bg);
+            backdrop-filter: blur(5px);
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            color: var(--neon-pink);
+            text-shadow: 0 0 10px var(--neon-pink);
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--neon-blue);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .section {
+            border-left: 4px solid var(--neon-pink);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--neon-blue);
+            font-size: 1.5rem;
+            text-shadow: 0 0 5px var(--neon-blue);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 5px;
+            background: rgba(255, 0, 255, 0.1);
+            border-bottom: 1px dashed var(--neon-blue);
+        }
+
+        .lucky-number {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 2rem;
+            color: var(--neon-pink);
+            opacity: 0.5;
+            font-weight: bold;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--neon-blue);
+            color: #000;
+            padding: 2px 8px;
+            margin: 3px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* 簡單的掃描線特效 */
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 99;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 242, 255, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+            opacity: 0.1;
+            position: fixed;
+            bottom: 100%;
+            animation: scanline 6s linear infinite;
+        }
+
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<div class="container">
+    <div class="lucky-number">#67</div>
+    
+    <h1>張家愷</h1>
+    <div class="subtitle">NQU CSIE // Freshman</div>
+
+    <div class="section">
+        <h2>> 身份證實</h2>
+        <p>目前就讀於 <strong>國立金門大學 - 資訊工程學系</strong> 大一。</p>
+    </div>
+
+    <div class="section">
+        <h2>> 遊戲領域 (Gaming)</h2>
+        <p>
+            <span class="tag">原神</span>
+            <span class="tag">異環</span>
+            <span class="tag">射擊遊戲</span>
+            <span class="tag">五子棋</span>
+            <span class="tag">西洋棋</span>
+            <span class="tag">2048</span>
+        </p>
+        <p>※ 戰利品庫存：收藏了一堆原神周邊。</p>
+    </div>
+
+    <div class="section">
+        <h2>> 影音頻道 (Media)</h2>
+        <ul>
+            <li>🎨 畫圖類：觀察線條與色彩的構成。</li>
+            <li>👻 恐怖類：偽人、異常、都市傳說愛好者。</li>
+            <li>😂 搞笑類：觀察 8+9 的街頭藝術（表演）。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>> 閱讀與運動 (Leisure)</h2>
+        <p>漫畫偏好：<span style="color: var(--neon-pink);">BL</span>、恐怖系列。</p>
+        <p>實體運動：熱衷於籃球競技。</p>
+    </div>
+</div>
+
+</body>
+</html>
